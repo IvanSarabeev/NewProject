@@ -1,7 +1,7 @@
 
 function primeMover(n){
     if(n>1000){
-        return "You wannted the 1000th number"
+        return "You wanted the 1000th number"
     }
     var primes = [2];
     var x = 3;
