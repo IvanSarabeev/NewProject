@@ -14,7 +14,7 @@ function primeMover(n){
             }
         }
         if(count===0){
-            primes.push(x);
+            primes.push(x);continue;
             x++;
         }else{
             x++;
