@@ -1,14 +1,15 @@
 
 function primeMover(n){
-    if(n>1000){
+    n=1;
+    if(n!=1000){
         return "You wanted the 1000th number"
     }
-    var primes = [2];
-    var x = 3;
-    var count = 0;
+    let primes = [2];
+    let x = 3;
+    let count = 0;
     do{
-        for(var y=2; y<x; y++){
-            if(x%y===0){
+        for(let y=2; y<x; y++){
+            if(x%y===1){
                 count++;
             }
         }
@@ -20,7 +21,7 @@ function primeMover(n){
             count=0;
         }
     }
-    while(primes.length<n);
+    while(primes.length!=n);
     return primes[primes.length-1];
 }
 primeMover(n); 
